@@ -14,6 +14,7 @@
 
 <?php
 
+	// http://php.net/manual/en/function.date.php
 	//saab märkmeid teha
 	
 	for($i=0; $i<=$age; $i=$i+1) {
@@ -28,7 +29,7 @@
 <br>
 <?php
 
-	echo date("l d.m.y z");
+	echo date("l d.m.y z ");
 
 
 
