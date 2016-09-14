@@ -25,10 +25,10 @@
 
 ?>
 
-
+<br>
 <?php
 
-	echo date("d.m.y");
+	echo date("l d.m.y z");
 
 
 
