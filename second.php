@@ -23,9 +23,17 @@
 
 	echo "õnne";
 
+?>
 
-	
-	
-	
+
+<?php
+
+	echo date("d.m.y");
+
+
+
+
+
 
 ?>
+
