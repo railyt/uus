@@ -8,18 +8,18 @@
 	
 		$signupEmailError= "*";
 	
-	//kas keegi vajutas nuppu ja see on üldse olemas
+	//kas keegi vajutas nuppu ja see on Ã¼ldse olemas
 	
 	if(isset ($_POST["signupEmail"])) {
 		
 		//kas on olemas
-		//kas on tühi
+		//kas on tÃ¼hi
 		
 		if(empty ($_POST["signupEmail"])){
 			
-			//on tühi
-			$signupEmailError = "* Väli on kohustuslik!";
-		}
+			//on tÃ¼hi
+			$signupEmailError = "* VÃ¤li on kohustuslik!";
+		} 
 	}	
 	
 
@@ -30,7 +30,14 @@
 	
 		if (empty ($_POST["signupPassword"])) {
 				
-			$signupPasswordError = "* Väli on kohustuslik";
+			$signupPasswordError = "* VÃ¤li on kohustuslik";
+		} else {
+			
+			// parool ei olnud tÃ¼hi
+			if(strlen($_POST["signupPassword"]) < 8 ) {
+				
+				$signupPasswordError = "* Parool peab olema vÃ¤hemalt 8 tÃ¤hemÃ¤rki pikk!";
+			}
 		}
 	}
 
